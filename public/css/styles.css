@@ -1,0 +1,252 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeede7fd;
+}
+header{
+    background-color: yellow;
+    width: 100%;
+}
+.subtitulo{
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+ul li a{
+    color:black;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.titular{
+    font-size: 24px;
+}
+.menus{
+    font-size: 20px
+}
+.precios{
+    font-size: 18px;
+    width: 70%;
+    order: 1;
+    align-items: start;
+}
+.descuentos{
+    font-size: 16px;
+    width: 30%;
+    color: green;
+    order: 2;
+    align-items: end;
+}
+.descripcion{
+    position: relative;
+    top:15px;
+    font-size: 16px;
+    display: none;
+    transition: opacity 0.5s ;
+}
+@keyframes descript{
+    0%{opacity: 0%}
+    100%{transform: translateY(5px);opacity:100%}
+}
+.caja:hover .descripcion{
+    display: flex;
+    opacity: 1;
+    animation: descript 1s
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div article i{
+    display: relative;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    left: 180px;
+    top: -15px;
+}
+.menus{
+    display: none;
+}
+.barra{
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center
+}
+.buscador{
+    display: flex;
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0px;
+    outline: none;
+    font-size: 1rem;
+    order:1
+}
+.lupa{
+    background-color: black;
+    width: 25%;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color:white;
+    cursor: pointer;
+    order:2
+}
+.caja{
+    width: 90%;
+    border-top: solid 1px #ebebeb;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.descr{
+    display: flex;
+    justify-content: space-around;
+}
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.hamburguesa{
+    display: flex;
+    background-color: rgb(151, 212, 236);
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0;
+    cursor: pointer;
+}
+@media(min-width:361px){
+    /*tablets*/
+    .burger-menu{
+        display: none;
+    }
+    .menus{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 50%;
+    }
+    .barra{
+        width: 50%;
+    }
+    .subtitulo{
+        display: none;
+    }
+    .caja{
+        width:40%
+    }
+    .ultima{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja1{
+        display: flex;
+        text-align: start;
+        order: 1;
+        justify-content: start;
+    }
+    .caja2{
+        display: flex;
+        text-align: end;
+        order: 2;
+        justify-content: end;
+    }
+}
+@media(min-width:768px){
+    /*desktop*/
+    .caja{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+        width: 20%;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 33.33%;
+        order: 1;
+    }
+    .barra{
+        width: 33.33%;
+        order: 2;
+    }
+    .subtitulo{
+        display: block;
+        width: 33.33%;
+        order: 3;
+        align-self: center;
+    }
+    .ultima{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:space-between
+    }
+    .caja1{
+        display: flex;
+        text-align: start;
+        order: 1;
+        justify-content: start;
+    }
+    .caja2{
+        display: flex;
+        text-align: end;
+        order: 2;
+        justify-content: end;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lista1{
+        order: 1;
+        width: 33.33%;
+    }
+    .lista2{
+        order: 2;
+        width: 33.33%;
+    }
+    .lista3{
+        order: 3;
+        width: 33.33%;
+    }
+    .lista1:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+    .lista2:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+    .lista3:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+    div article i{
+        transition: transform 0.3s ease;
+    }
+    div article i:hover{
+        transform: rotate(360deg);
+    }
+}

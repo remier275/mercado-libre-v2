@@ -1,0 +1,164 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+header{
+    background-color: yellow;
+    width: 100%;
+}
+ul li a{
+    color:black;
+    text-decoration: none;
+}
+.logo{
+    width: 33.33%;
+    order: 1;
+}
+.barra{
+    width: 33.33%;
+    order: 2;
+}
+.subtitulo{
+    display: block;
+    width: 33.33%;
+    order: 3;
+    align-self: center;
+    text-align: center;
+}
+.burger-menu{
+    display: none;
+}
+ul li{
+    list-style: none;
+}
+.barra{
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center
+}
+.buscador{
+    display: flex;
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0px;
+    outline: none;
+    font-size: 1rem;
+    order:1
+}
+.menus{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 20px
+}
+.lupa{
+    background-color: black;
+    width: 25%;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color:white;
+    cursor: pointer;
+    order:2
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.register-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-container h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.forma-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    font-size: 16px;
+}
+.forma-group button:hover {
+    background-color: #0022AA;
+    color:#000;
+    transition: all 1s
+}
+@media(min-width:768px){
+    /*desktop*/
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lista1{
+        order: 1;
+        width: 33.33%;
+    }
+    .lista2{
+        order: 2;
+        width: 33.33%;
+    }
+    .lista3{
+        order: 3;
+        width: 33.33%;
+    }
+    .lista1:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+    .lista2:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+    .lista3:hover{
+        color:#39b54a;
+        transition: color 1s;
+    }
+}
